@@ -13,9 +13,7 @@ const max = 10;
 
 let filter = [];
 
-array.forEach((element,index) => {
-    if(index >= min && index <= max){
-        filter.push(element);
-    }
-});
-console.log(filter);
+const filtrato = (Array,a,b) => {
+    return Array.filter((element,index) => index >= a && index <= b);
+};
+console.log(filtrato(array,min,max));
